@@ -1,62 +1,222 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+	<head>
+	<meta name="author" lang="en" content="Nick Smith -(cky2250) (admin@mrplows-server.us)" />
+	<meta content='Minecraft Statistics Project, It Outputs Data From Any MySQL Plugin Made To Work With Bukkit.' name='description' />
+	<meta name="keywords" content="minecraft, stats, bukkit, mrplow, cky2250, html5, foundation" />
+	<meta name="copyright" content="mrplows-server.us Copyright (c) 2011 - 2013 Developed and Updated By: Nick Smith" />
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<!-- Included CSS Files (Uncompressed) -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+	
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
+
+	
+		<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicons/apple-touch-icon-144x144-precomposed.png">
+	<!-- For iPhone with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/apple-touch-icon-114x114-precomposed.png">
+	<!-- For first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/apple-touch-icon-72x72-precomposed.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+	
+		<title>Minecraft Statistics (Webstats) by cky2250</title>
+		
+		
+		
+		<!--<script type="text/javascript">
+   $(window).load(function() {
+       $('#featured').orbit();
+       $('#featuredContent').orbit({ fluid: '2x1' });
+       $('#featuredBullets').orbit({
+        animation: 'horizontal-slide',                  // fade, horizontal-slide, vertical-slide, horizontal-push
+        animationSpeed: 800,                // how fast animtions are
+        timer: true,       // true or false to have the timer
+        advanceSpeed: 4000,     // if timer is enabled, time between transitions
+        pauseOnHover: true,      // if you hover pauses the slider
+        startClockOnMouseOut: false,    // if clock should start on MouseOut
+        startClockOnMouseOutAfter: 1000,    // how long after MouseOut should the timer start again
+        directionalNav: false,      // manual advancing directional navs
+        captions: false,       // do you want captions?
+        captionAnimation: 'fade',     // fade, slideOpen, none
+        captionAnimationSpeed: 800,   // if so how quickly should they animate in
+        bullets: false,       // true or false to activate the bullet navigation
+        bulletThumbs: true,    // thumbnails for the bullets
+        bulletThumbLocation: '../images/orbit-demo/bullets/',    // location from this file where thumbs will be
+        afterSlideChange: $.noop    // empty function
+      });
+   });
+</script>-->
 
-    <title>Webstats by cky2250</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Webstats</h1>
-        <h2>MySQL - PHP web data page for public viewing of Minecraft plugin data</h2>
-        <a href="https://github.com/cky2250/WebStats" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
-
+	</head>
+<body>
+	<header>
+		<div class="inner">
+			<h1>Webstats</h1>
+			<h2>MySQL & PHP Website Data Pages for Public Viewing of Minecraft Plugin(s) Data.</h2>
+			<a href="https://github.com/cky2250/WebStats" class="button"><small>View project on</small>GitHub</a>
+		</div>
+	</header>
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>Welcome to GitHub Pages.</h3>
+          <h3>Welcome to WebStats by Nick Smith - (cky2250).</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+			<div id="featured">
+			  <img src="../images/orbit/Desert.jpg" alt="slide image" />
+			  <img src="../images/orbit/Chrysanthemum.jpg" alt="slide image" />
+			  <img src="../images/orbit/Hydrangeas.jpg" alt="slide image" />
+			  <img src="../images/orbit/Jellyfish.jpg" alt="slide image" />
+			  <img src="../images/orbit/Koala.jpg" alt="slide image" />
+			  <img src="../images/orbit/Lighthouse.jpg" alt="slide image" />
+			  <img src="../images/orbit/Penguins.jpg" alt="slide image" />
+			  <img src="../images/orbit/Tulips.jpg" alt="slide image" />
+			</div>
+			<p>This was based on <a href="http://forums.bukkit.org/threads/web-webstatistic-for-minecraft-v1-10b-1337.17793/">[WEB] Webstatistic for Minecraft v1.10b [1337]</a> - the code used in this is far more superior. It is being made into a Wordpress or phpwiki or any good website project that has an installer, login, admin page, and many goodies.</p>
+			
+			<p>Webstatistic for Minecraft is shortened to WS in the following text:</p>
+			
+			<p>For issue, suggestion, source code, and other content go <a href="https://github.com/cky2250/WebStats">HERE</a></p>
+			
+			<p>Vote For The Plugin. <a href="http://www.surveymonkey.com/s/8HF72BK">HERE</a></p>
+			
+			<p>Steam Group <a href="http://steamcommunity.com/groups/WSFM">HERE</a></p>
+			
+			<h4>Cool Links To Use</h4>
+			<p>
+				<a href="http://plugins.maniacraft.de/SaAPlugin/achgen">Achievement Maker</a><br />
+				<a href="http://89.144.25.51:8888/convert.php">Database Converter</a><br />
+			</p>
+			<h3>What's "Webstatistic for Minecraft"?</h3>
+			<p>
+				Every serveradmin wants, at some point, host some statistic data for the players, so that they can compete which each other (who destroyed the most cobblestone blocks or whatever). They can use it as a system to determine prices, or just to have an overview to compare stuff with each other.
+				If there are plugins WS should support in future, the plugin must be MySQL based, and if there are enough requests.
+			</p>
+			
+			<h3>What you mean with "modular system" ?</h3>
+			<p>
+				WS has a core plugin, which is the above mentioned stats plugin for minecraft. In generall all stats collected by this plugin are evaluable.
+				Beside this plugin, WS supports other plugins which collects data in MySQL databases. The following plugins are already supported:
+				<ul>
+					<li><a href="http://dev.bukkit.org/server-mods/achievements/">Achievements</a> *WORKS (with stats)</li>
+					<li><a href="http://dev.bukkit.org/server-mods/tno-achievements/">Achievements 2.0</a> *PLUGIN DOES NOT WORK IN LATTEST CRAFTBUKKIT BUILD (not WS fault)</li>
+					<li>BeardAch * NOT KNOWN YET. Sorry</li>
+					-----------------------------------------------------------------------------------------------------------------------
+					<li><a href="http://dev.bukkit.org/server-mods/iconomy/">iConomy</a> ~ <a href="https://github.com/iConomy/Core">GitHub</a> *WORKS</li>
+					<li><a href="http://dev.bukkit.org/server-mods/jail/">Jail</a> ~ <a href="https://github.com/matejdro/Jail">GitHub</a> * WORKS</li>
+					<li><a href="http://dev.bukkit.org/server-mods/jobs/">Jobs</a> ~ <a href="https://github.com/phrstbrn/Jobs">GitHub</a> *WORKS</li>
+					<li><a href="http://dev.bukkit.org/server-mods/mcmmo/">McMMO</a> ~ <a href="https://github.com/mcMMO-Dev/mcMMO">GitHub</a> *WORKS</li>
+					<li><a href="http://dev.bukkit.org/server-mods/stats/">Stats</a> *WORKS (In Build 1.1-R6)</li>
+					<li><a href="http://dev.bukkit.org/server-mods/tno-stats/">Stats 2.0</a> *WORKS (Up to Build 1.1-R4)</li>
+					<li><a href="http://dev.bukkit.org/server-mods/beardstat/">BeardStat</a> *WORKS[Known R6-build 2034 (MC:1.2.3)] - Uses same layout as Stats as I know of.</li>
+					<li><a href="http://dev.bukkit.org/server-mods/lolmewnstats/">Stats by lolmewnstats</a> ~ <a href="https://bitbucket.org/Lolmewn/stats/src">source</a> - TBA</li>
+				</ul>
+			</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+			<h3>What are the requirements of WS?</h3>
+			<ul>
+				<li>PHP (tested with v5.2.5 and above)</li>
+				<li>MySQL</li>
+			</ul>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+			<h2>And for the noobs use xampp *as seen below</h2>
 
-<h3>Designer Templates</h3>
+			<h3>Suggested:</h3>
+			<ul>
+				<li><a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a> ~ sets up everything for you.</li>
+				<li><a href="http://www.easyphp.org/">EasyPHP</a> ~ sets up everything for you.</li>
+				<li><a href="http://dev.bukkit.org/server-mods/ping-motd/">Ping MOTD</a> ~ Plugin that seems to never brake, try it out.</li>
+			</ul>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+			<h3>Installation</h3>
+			<p>
+				1~Extract the zip file in your webserver directory *most likely<br />
+				2~The directory "image-cache" needs write permission (chmod 777) !<br />
+				~'modules\player-image\image-cache'<br />
+				~'modules\player-image\image-cache\player-skin'<br />
+				~'config\config.php'<br />
+			</p>
 
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+			<h3>To-Do:</h3>
+			<ul>
+				<li>Finish Brewing Pages</li>
+				<li>Add Smelting Pages</li>
+				<li>Admin Page</li>
+				<li>Remove The Achievements Tab and Move It To The Players Page With It Grayed Out and Not Showing The Requirements Until The Player Unlocks The Achievement</li>
+				<li>Add Rest Of ID's and Add The Extra ID's To Main ID's Page example ( 15:1 15:2 goes onto 15 page)</li>
+				<li>Add InventorySQL</li>
+				<li>Add Stats & Achievements Support</li>
+				<li>Add BeardStat & BeardAch Support</li>
+				<li>Add HawkEye Support</li>
+				<li>Add Statistician v2.0 Support</li>
+				<li>Add Smart Phone Support * iPhone, Droid.</li>
+				<li>Add <a href="http://dev.bukkit.org/server-mods/jailplusplus/">Jail ++</a> ~ <a href="https://github.com/UltimateDev/jailplusplus/">GitHub</a></li>
+			</ul>
+			<h3>Current Pending Update</h3>
+			<h4>v3.0 (No ETA)</h4>
+			<ul>
+				<li>Added On/Off for Player Page Plugins, this is dynamic with your selection from the installer.</li>
+				<li>Added Admin Page.</li>
+				<li>Added Smart Phone Support * iPhone(Added Foundation v3.1)</li>
+				<li>Added Sample Config.</li>
+				<li>Added IP Tracker.</li>
+				<li>Updated A few items photos larger image.</li>
+				<li>Updated Brewing Functions</li>
+				<li>Added A few Brewing Items</li>
+				<li>Removed/Updated ID page functions * still slow (using foundations) due to the amount of css.</li>
+				<li>Updated Config Installer with notes on what is what.</li>
+				<li>MySQL is much more easy for people to understand *(now once more able to set databases for each plugin verse 1 for all - not recommended).</li>
+			</ul>
+<!--<pre>
+	<code>
+	</code>
+</pre>-->
+			<h3>Authors and Contributors</h3>
+			<p>
+				<ul>
+					<li>Nick Smith (<a href="https://github.com/cky2250">cky2250</a>)</li>
+				</ul>
+			</p>
+			<h4>What Browser Does This Work With?</h4><br />
+			<h4>Known</h4>
+			<p>
+				*At least... Please Post otherwise. Thank You.<br />
+				This is using HTML5 in some areas, but the main areas are not so that everyone can view. *In the middle of making all html5.<br />
+				- IE9+, Firefox 1.5+, Opera 8+, Safari 3+, Chrome 0.2+
+			</p>
+			<p>
+				**DOWNLOADING FROM ANY SOURCE, FOR COMMERCIAL USE IS PROHIBITED. IF YOU NEED THIS PROJECT FOR COMMERCIAL USE, YOU WILL NEED TO PURCHASE A LICENSE. BY DOWNLOADING THIS PROJECT YOU AGREE TO THESE TERMS.
+				**I HAVE A LAWYER, IF THERE IS ANY PROBLEM.
+			</p>
         </section>
 
         <aside id="sidebar">
+	      <a href="https://github.com/downloads/cky2250/WebStats/stats%20v2.1.zip" class="button">
+            <small>Download</small>
+            stats v2.1
+          </a>
           <a href="https://github.com/cky2250/WebStats/zipball/master" class="button">
             <small>Download</small>
             .zip file
@@ -68,11 +228,17 @@ $ git checkout gh-pages
 
           <p class="repo-owner"><a href="https://github.com/cky2250/WebStats"></a> is maintained by <a href="https://github.com/cky2250">cky2250</a>.</p>
 
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+          <p>This is the new homepage for webstats the forum is hosted on <a href="http://forums.bukkit.org/">Bukkit</a>. At this thread, <a href="http://forums.bukkit.org/threads/web-webstatistic-for-minecraft-v2-1-mrplows-any-build.60843/">here</a>.</p>
         </aside>
       </div>
     </div>
+	
 
-  
-  </body>
+<!-- Included JS Files (Compressed) -->
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/foundation.min.js"></script>
+
+<!-- Initialize JS Plugins -->
+<script src="javascripts/app.js"></script>
+</body>
 </html>
